@@ -14,7 +14,7 @@ function Allrest() {
   const [allRestaurants,setAllRestaurants]=useState([])
 
   const fetchData=async()=>{
-    const response = await axios.get('http://localhost:3001/restaurants')
+    const response = await axios.get('https://restaurant-backend-hleq.onrender.com/restaurants')
     console.log(response.data);
     setAllRestaurants(response.data)
   }

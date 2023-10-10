@@ -23,7 +23,7 @@ function Viewrest() {
 
     //api call for get perticular restaurant details
     const fetchData = async ()=>{
-        const {data} = await axios.get(`http://localhost:3001/restaurants/${id}`)
+        const {data} = await axios.get(`https://restaurant-backend-hleq.onrender.com/restaurants/${id}`)
         console.log(data);//object perticular rest details
         SetRestDetails(data)
     }
